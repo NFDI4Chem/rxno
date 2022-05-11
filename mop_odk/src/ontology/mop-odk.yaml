@@ -1,3 +1,13 @@
+catalog_file: catalog-v001.xml
+ci:
+- github_actions
+components: null
+contact: null
+contributors: null
+create_obo_metadata: true
+creators: null
+description: None
+edit_format: owl
 id: mop
 title: "Molecular Process Ontology"
 github_org: rsc-ontologies
@@ -16,6 +26,11 @@ import_group:
   products:
     - id: ro
     - id: bfo
+      module_type: mirror
     - id: obi
+      module_type: BOT
+    - id: iao
+      module_type: BOT
     - id: omo
+      module_type: mirror
 robot_java_args: '-Xmx8G'
