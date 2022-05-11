@@ -30,7 +30,7 @@ import_group:
     - id: obi
       module_type: BOT
     - id: iao
-      module_type: BOT
+      module_type: custom
     - id: omo
       module_type: mirror
 robot_java_args: '-Xmx8G'
