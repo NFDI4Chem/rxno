@@ -41,6 +41,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
@@ -15445,10 +15453,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOP_0000715">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOP_0000543"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The formation of a trimer from three molecular subunits.</obo:IAO_0000115>
+        <obo:IAO_0000116>The GO class &quot;protein trimerization&quot; (https://purl.obolibrary.org/obo/GO_0070206) would actually be a subclass of &quot;trimerization&quot; according to the definition provided here. However, for the reason of not wanting to inject this subclassOf axiom into GO, we decided to not assert this in MOP as of yet. Further discussion is needed with the GO and/or OBO team to see how this GO class can be integrated.</obo:IAO_0000116>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4378-6061"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-01T09:40:48Z</dc:date>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOP:0000715</oboInOwl:id>
         <rdfs:label xml:lang="en">trimerization</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/rsc-ontologies/rxno/issues/45"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/rsc-ontologies/rxno/pull/46#issuecomment-1124151946"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MOP_0000715"/>
